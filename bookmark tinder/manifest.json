@@ -1,0 +1,10 @@
+{
+  "manifest_version": 3,
+  "name": "Bookmark Tinder",
+  "version": "1.0",
+  "description": "Review and manage your bookmarks like Tinder!",
+  "permissions": ["bookmarks", "storage"],
+  "action": {
+    "default_popup": "popup.html"
+  }
+}

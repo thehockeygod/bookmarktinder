@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Bookmark Tinder</title>
+  <style>
+    body {
+      width: 300px;
+      padding: 10px;
+      display: flex;
+      flex-direction: column;
+    }
+    #resetButtonContainer {
+      display: flex;
+      justify-content: flex-end; /* Push to the right */
+      margin-bottom: 5px; /* Add some space below */
+    }
+    #resetButton {
+      padding: 5px 10px;
+      cursor: pointer;
+      font-size: 0.8em;
+    }
+    #folderSelect {
+      width: 100%;
+      margin-bottom: 10px;
+    }
+    #bookmarkDisplay {
+      border: 1px solid #ccc;
+      padding: 10px;
+      margin-bottom: 10px;
+      text-align: center;
+      flex-grow: 1;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+    }
+    #bookmarkTitle {
+      font-weight: bold;
+      margin-bottom: 5px;
+    }
+    #bookmarkUrl {
+      font-size: 0.8em;
+      margin-bottom: 10px;
+      overflow-wrap: anywhere;
+    }
+    #actions {
+      display: flex;
+      justify-content: space-around;
+      margin-bottom: 10px;
+    }
+    .actionButton {
+      padding: 10px 20px;
+      cursor: pointer;
+    }
+    #deleteButton {
+      background-color: #f44336;
+      color: white;
+      border: none;
+    }
+    #keepButton {
+      background-color: #4CAF50;
+      color: white;
+      border: none;
+    }
+    #moveButton {
+      background-color: #2196F3;
+      color: white;
+      border: none;
+    }
+    #newFolderInput{
+      display: none;
+      width: 100%;
+      margin-bottom: 5px;
+    }
+    #newFolderConfirm{
+      display: none;
+      width: 100%;
+    }
+    #footer{
+      text-align: center;
+      font-size: 0.8em;
+      margin-top: 10px;
+    }
+  </style>
+</head>
+<body>
+  <div id="resetButtonContainer">
+    <button id="resetButton">Reset</button>
+  </div>
+  <select id="folderSelect">
+    <option value="" disabled selected>Choose a bookmark folder</option>
+  </select>
+  <div id="bookmarkDisplay">
+    <div id="bookmarkTitle"></div>
+    <div id="bookmarkUrl"></div>
+    <div id="newFolderInput"><input type="text" id="newFolderName" placeholder="New Folder Name"></div>
+    <button id="newFolderConfirm" style="display:none">Confirm New Folder</button>
+  </div>
+  <div id="actions">
+    <button id="deleteButton" class="actionButton">X</button>
+    <button id="keepButton" class="actionButton">&#10004;</button>
+    <button id="moveButton" class="actionButton">Move</button>
+  </div>
+  <div id="footer">Created by <a href="https://www.ryanmjones.com" target="_blank">Ryan Jones</a></div>
+  <script src="popup.js"></script>
+</body>
+</html>
