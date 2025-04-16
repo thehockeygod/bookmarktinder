@@ -15,3 +15,4 @@ Enable Developer Mode (top-right corner)
 
 Click "Load unpacked" and select the folder you extracted
 
+Alternatively you can download the raw source folder here too
