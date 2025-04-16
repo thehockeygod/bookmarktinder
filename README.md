@@ -6,7 +6,12 @@ It's like tinder but for Chrome bookmarks. Go through one by one and choose to k
 Installation instructions:
 
 Rename the .crx file to .zip
+
 Extract the contents to a folder
+
 Go to chrome://extensions/
+
 Enable Developer Mode (top-right corner)
+
 Click "Load unpacked" and select the folder you extracted
+
